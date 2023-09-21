@@ -1,14 +1,16 @@
-.list{
-    font-family: Arial, Helvetica, sans-serif;
+.list li{
+    font-family: Helvetica, Arial;
     list-style: none;
     font-size: large;
-    
-}
-
-li{
     display: inline;
     margin-right: 1rem;
     
+}
+
+
+nav a{
+    color: #adb5bd;
+    text-decoration: none;
 }
 
 .menu{
@@ -19,3 +21,64 @@ li{
     right: 2rem;
     
 }
+
+.bgImage{
+    background: url("images/kl.jpg");
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+.bgText{
+    font-family: Helvetica, Arial;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.about{
+    margin-top: 10%;
+    font-family: Helvetica, Arial;
+    margin-left: 5rem; 
+    
+}
+
+.aboutContainer{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.aboutTitle{
+    font-size: 3rem;
+    margin: 0 auto 5% auto;
+    text-align: center;
+}
+
+.aboutImage{
+    width: 30%;
+    float: left;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.descTopContainer{
+    margin: auto 1rem 0 1rem;
+    text-align: left;
+    padding: 1rem 5rem 0 1rem; /* top right bottom left */
+}
+
+.infoList{
+    margin: auto 1rem 0 1rem;
+    text-align: left;
+    padding: 1rem 3rem 0 1rem;
+}
+
+
+
+
+
+
