@@ -1,3 +1,6 @@
+body{
+    margin-left: 0.1rem;
+}
 .list li{
     font-family: Helvetica, Arial;
     list-style: none;
@@ -53,11 +56,12 @@ nav a{
     margin-left: 20px;
 }
 
-.aboutTitle, .projectTitle{
+.aboutTitle, .projectTitle, .contactTitle{
     font-size: 3rem;
     margin: 0 auto 5% auto;
     text-align: center;
     font-weight: 500;
+    font-family: system-ui, -apple-system, Arial;
 }
 
 .aboutImage{
@@ -90,6 +94,7 @@ nav a{
 .projectContainer{
     font-family: system-ui, -apple-system, Arial;
     margin-top: 10rem;
+    padding: 10px;
     
 }
 
@@ -98,10 +103,105 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+    
 }
 
 .flexItem{
     box-sizing: border-box;
     width: 30%;
     margin-bottom: 5rem;
+    text-align: center;
+    border: 5px solid;
+    padding: 20px;
+    overflow: visible;
+    border-radius: 25px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    border-image-slice: 1;
+
+}
+
+
+.flexImage{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   object-position: cover;
+
+    
+}
+
+.imageContainer{
+    width: 100%;
+    height: 15rem; 
+    overflow:hidden;
+    position:relative;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 10px;
+
+    
+}
+
+.flexItem .projectName{
+    font-weight: bold;
+}
+
+.button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 5px 13px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+.contactContainer{
+    margin: 4rem 0 0 0;
+}
+
+.formContainer{
+    margin: 7rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+
+}
+
+input{
+    width: 50%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.submitButton{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.contactBar{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(90deg, #743ad5, #d53a9d);
+    height: 3.5rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -0.5rem;
+    width: 91.57rem;
+  
+}
+
+.contactBar .barIcon{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+
 }
