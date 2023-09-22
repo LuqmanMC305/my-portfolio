@@ -26,6 +26,7 @@ nav a{
     background: url("images/kl.jpg");
     height: 100vh;
     background-size: cover;
+    margin: -0.5rem;
     
 }
 
@@ -42,8 +43,8 @@ nav a{
 
 .about{
     margin-top: 10%;
-    font-family: Helvetica, Arial;
-    margin-left: 5rem; 
+    font-family: system-ui, -apple-system, Arial;
+    margin-left: 3rem; 
     
 }
 
@@ -52,33 +53,55 @@ nav a{
     margin-left: 20px;
 }
 
-.aboutTitle{
+.aboutTitle, .projectTitle{
     font-size: 3rem;
     margin: 0 auto 5% auto;
     text-align: center;
+    font-weight: 500;
 }
 
 .aboutImage{
     width: 30%;
     float: left;
     margin-top: 1rem;
-    margin-right: 1rem;
+    margin-right: 4rem;
+    height: 50vh;
+
 }
 
-.descTopContainer{
+.descTopContainer, .descBottomContainer{
     margin: auto 1rem 0 1rem;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
     padding: 1rem 5rem 0 1rem; /* top right bottom left */
 }
 
-.infoList{
-    margin: auto 1rem 0 1rem;
-    text-align: left;
-    padding: 1rem 3rem 0 1rem;
+
+.infoContainer{
+   display: flex;
+   flex-direction: column;
+   padding-left: 0rem;
+}
+
+.infoContainer li{
+    margin-bottom: 10px;
+}
+
+.projectContainer{
+    font-family: system-ui, -apple-system, Arial;
+    margin-top: 10rem;
+    
 }
 
 
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-
-
-
+.flexItem{
+    box-sizing: border-box;
+    width: 30%;
+    margin-bottom: 5rem;
+}
